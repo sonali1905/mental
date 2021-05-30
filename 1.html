@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <link rel="stylesheet" href="aktu.css">
+</head>
+<style>
+	body{background-image: linear-gradient(0deg, rgba(228, 225, 219, 1), rgba(228, 225, 219, 1));
+
+	}
+h1 {
+  font-size: 30px;
+  background-color: none;
+}
+p {
+  background-color:none;
+  text-shadow: 5px;
+  font-size: 20px;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #c6ffc1;
+  color: black;
+  font-size: 700px;
+  white-space: normal;
+  height:10%;
+}
+.header h1 {
+  font-size: 40px;
+  color:#34656d;
+}
+.header img{
+  float: left;
+ margin-left: 2%
+
+}
+nav{
+  width:100%;
+  background-color: #add8e6;
+  overflow: auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0 0 0 500px;
+  background-color:#add8e6;
+  padding: 0;
+}
+li{
+  float:left;
+ 
+   }
+
+nav a {
+  width:150px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px 15px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+nav a:hover {
+            color: dodgerblue;
+            background:gray;
+            transition: 0.5s;
+            text-transform: uppercase;
+            }
+
+ nav a::before {
+     content: '';
+   display: block;
+   height: 7px;
+  background-color: grey;
+  position: absolute;
+   top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+        }
+      
+nav a:hover:before {
+  width: 100%;
+ }
+	img 
+	{
+		margin-left: 30%;
+		width:500px;
+	}
+	.container h1{
+		color:darkblue;
+		font-family: "Times New Roman",sans-serif;
+		font-weight:bolder;
+		margin-top: 9%;
+		text-transform: uppercase;
+	}
+	.container p{
+		color:black;
+		font-style: italic;
+		font-weight: bold;
+	}
+	.container h2{
+		font-size:10px;
+		font-weight:normal;
+		text-decoration: none;
+		font-family: Georgia;
+	}
+
+	.intro{
+        position:relative;
+        overflow:hidden;
+        margin-top: 9%;
+        margin-left:7%;
+        width:50%;
+        height:100%;
+        box-sizing:border-box;
+        transition:all .5s;
+    }
+    .intro img
+    	{
+    		height:50%;
+    		width:50%;
+    	}
+    
+    .sub{
+        position:relative;
+        overflow:hidden;
+       color:white;
+        margin-top: -16.6%;
+        margin-left:50%;      
+        height:80%;
+        width:30%;
+        box-sizing:border-box;
+        box-shadow:0 2px 10px #ccc;
+        background:darkblue;
+        
+    }
+
+    .sub h2{
+        margin-top:50px;
+        margin-left: 5%;
+        font-family: Baloo+Bhai;
+    }
+    .btn{
+        margin-top: 50px;
+        margin-left:40%;
+        display:inline-block;
+        padding: 10px,40px;
+        border:2px solid magenta;
+        font-weight:400;
+        background:blue;
+    }
+    .btn:hover{
+        background:rgba(52,152,219,1.0);
+        transition: all .5s;
+        text-decoration:none;
+    }
+
+
+
+.main{
+	margin:8%;
+    }
+    .card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+     background: dodgerblue;
+    }
+    .title{
+  text-align: center;
+  padding: 10px;  
+ }
+
+.title h2{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: skyblue;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+footer {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 40px, 100px;
+            background: #00e2e6;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            color:black;
+        }
+
+        footer .main-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+            color: black;
+        }
+
+        footer .main-content .left {
+            margin-right: 250px;
+        }
+
+        footer .main-content .left.box {
+            width: 40%;
+        }
+
+        footer .main-content h2 {
+            position: relative;
+            color: black;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        footer .main-content .left.box h2:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #f00;
+        }
+
+        footer p {
+            color: white;
+            margin-left:2%;
+        }
+
+        .social {
+            margin-top: 20px;
+            display: flex;
+
+        }
+
+        .social a {
+            list-style: none;
+        }
+
+        .social a span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+
+        }
+
+        .social a span:hover {
+            background: lightgrey;
+        }
+
+    
+        .copyrightText {
+        
+            width: 100%;
+            background:#00ace6;
+            padding: 4px 100px;
+            text-align: center;
+            color: black;
+        }
+        .btn{
+        	background:cyan;
+        }
+</style>
+<body>
+  
+<div class="header">
+      <img src="mental.jpg" height="120px;" width=" 10%" />
+      <h1>MENTAL HEALTH MATTERS</h1>
+      <p><i>Take Care of Yourself</i></p>
+    </div>
+    
+
+    <nav>
+      <ul>
+        
+        <li><a href="new.html"><b>Home</b>
+          <i class="fa fa-home"></i>
+        </a></li>
+        <li><a href="1.html"><b>10-18 Years</b>
+        </a></li>
+        <li><a href=""><b>19-25 Years</b>
+        </a></li>
+        <li><a href=""><b>25-35 Years        
+        </a></li>
+        <li><a href=""><b>35 + Years </b>
+        </a></li>
+        <li><a href="login.html"><b>Login/Signup</b>
+          <i class="fa fa-sign-in" ></i>
+        </a>
+      </li>
+
+  </li>
+</ul>
+</nav>
+	<img src="young.jpg" >
+	<div class="container">
+
+		<h1>Kids and Teenage (10-18)</h1>
+<p>Going through tough times? Stress, anxiety and feeling down can affect anyone, and happens to a lot of us at some point in our lives.</p><br>
+
+<h4>We all have good days and bad days. However, if you're feeling sad, down or anxious and these feelings have started to affect your everyday life, then it's important to find out what's going on and how you can manage it.</h4>
+	</div>
+	<div class="intro">
+		<img src="counsellor.jpg">
+	</div>
+	<div class="sub">
+
+		<h2>Mental health issue</h2>
+            <h5><p>Learn about the signs and symptoms of anxiety depression and meantal illness</p></h5>
+            <p><a href='#' class="btn">View More--></a><p>
+	</div>
+
+	<div class="main">
+		<div class="card">
+          <div class="title">
+            <h2>Support And services</h2>
+           </div>
+        <div class="des">
+             <p>Sometime we need help from other people like family members and friends.Find out how you can take support ...</p>
+             <button>Read More...</button>
+        </div>
+       </div>
+        <div class="card">
+          <div class="title">
+            <h2>Youth life issues</h2>
+           </div>
+        <div class="des">
+             <p>Find helpful contacts and websites for commom youth concernlike bullying ,exam stress and relationship issues</p>
+             <button>Read More...</button>
+        </div>
+       </div>
+
+        <div class="card">
+          <div class="title">
+            <h2>Help someone else</h2>
+           </div>
+        <div class="des">
+             <p>It is very hard to know that when we have to start a conversation with someone .Learn about mental health </p>
+             <button>Read More...</button>
+        
+        </div>
+    </div>
+
+      <div class="card">
+          <div class="title">
+            <h2>Healthy Families</h2>
+           </div>
+        <div class="des">
+             <p>If you parents or elders one is not good mentally.Always try to become pillar Find how to make them happy </p>
+             <button>Read More...</button>
+        
+        </div>
+    </div>
+    </div>
+
+
+<footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2> About us</h2>
+                <p>Mental Health Matter is only website which gives mental awaress to all ages people.</p>
+                <div class="social">
+                    <a href="#"><span class="fa fa-facebook-square"></span></a>
+                    <a href="#"><span class="fa fa-twitter-square"></span></a>
+                    <a href="#"><span class="fa fa-instagram"></span></a>
+                    <a href="#"><span class="fa fa-youtube-play"></span></a>
+                </div>
+
+
+                <h2> Address</h2>
+                <div class="Content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Delhi,India</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+91 90XXXXXXX1</span>
+                    </div>
+                    <div class="Email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">abc@example.com</span>
+                    </div>
+                </div>
+            </div>
+
+
+           
+            <div class="left contact">
+               <h2> Contact us</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text" placeholder="Email id" required>Email*</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Message*</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="Submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © 2021 Mental Health Matters .All right are reserved</p>
+    </div>
+
+
+</body>
+</html>

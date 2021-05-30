@@ -1,0 +1,260 @@
+
+
+h1 {
+  font-size: 30px;
+  background-color: none;
+}
+p {
+  background-color:none;
+  text-shadow: 5px;
+  font-size: 20px;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #c6ffc1;
+  color: black;
+  font-size: 700px;
+  white-space: normal;
+}
+.header h1 {
+  font-size: 40px;
+  color:#34656d;
+}
+.sidenav {
+  margin: 0px;
+  padding-left: 20px;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 255px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 200px;
+  text-decoration:none;
+  font-size: 35px;
+  color: white;
+  display: inline;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+img{
+  float: left;
+}
+.info{
+  position: relative;
+  color: white;
+  margin: 0px;
+  text-align: left;
+  background: #ffa07a	;
+  color: white;
+  font-size: 27px;
+  white-space: normal;
+}
+.container{
+  font-family: 'Baloo Bhai 2', cursive;
+}
+.first {
+    font-size: 20px;
+  position: absolute;
+  top: 300px;
+  bottom: 0px;
+  left: 280px;
+}
+.second {
+    font-size: 20px;
+  position: absolute;
+    top: 320px;
+    bottom: 0px;
+  left: 280px;
+}
+.third {
+    font-size: 20px;
+  position: absolute;
+  top: 360px;
+left: 280px;
+}
+.fourth {
+    font-size: 20px;
+  position: absolute;
+  top: 390px;
+left: 280px;
+}
+.fifth {
+    font-size: 20px;
+  position: absolute;
+  top: 420px;
+left: 280px;
+}
+.sixth{
+    font-size: 20px;
+  position: absolute;
+  top: 440px;
+left: 280px;
+}
+.next{
+  top: 500px;
+    position: absolute;
+  font-size: 20px;
+  left: 280px;
+}
+.navigation_bar{
+  font-size: 20px;
+  font-style:italic;
+  word-spacing: 20px;
+  background-color:white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  font-family: monospace;
+  margin: 0px;
+  background-color:#add8e6;
+  height: 75px;
+  text-decoration:inherit;
+}
+nav{
+  width:100%;
+  
+  overflow: auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0 0 0 500px;
+  padding: 0;
+}
+li{
+  float:left;
+ 
+   }
+
+nav a {
+  width:150px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px 15px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+nav a:hover {
+            color: dodgerblue;
+            background:gray;
+            transition: 0.5s;
+            text-transform: uppercase;
+            }
+
+ nav a::before {
+     content: '';
+   display: block;
+   height: 7px;
+  background-color: grey;
+  position: absolute;
+   top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+        }
+      
+nav a:hover:before {
+  width: 100%;
+ }
+/**Footer**/
+footer {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 40px, 100px;
+            background: #00e2e6;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            color:black;
+        }
+
+        footer .main-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        footer .main-content .left {
+            margin-right: 250px;
+        }
+
+        footer .main-content .left.box {
+            width: 40%;
+        }
+
+        footer .main-content h2 {
+            position: relative;
+            color: black;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        footer .main-content .left.box h2:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #f00;
+        }
+
+        footer p {
+            color: white;
+            margin-left:2%;
+        }
+
+        .social {
+            margin-top: 20px;
+            display: flex;
+
+        }
+
+        .social a {
+            list-style: none;
+        }
+
+        .social a span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+
+        }
+
+        .social a span:hover {
+            background: lightgrey;
+        }
+
+    
+        .copyrightText {
+        
+            width: 100%;
+            background:#00ace6;
+            padding: 4px 100px;
+            text-align: center;
+            color: black;
+
+        }
